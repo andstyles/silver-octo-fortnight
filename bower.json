@@ -1,0 +1,14 @@
+{
+  "name": "silver-octo-fortnight",
+  "description": "Building a Full-Stack App with React and Express",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
