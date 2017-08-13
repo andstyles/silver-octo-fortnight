@@ -1,0 +1,32 @@
+{
+  "name": "silver-octo-fortnight",
+  "version": "1.0.0",
+  "description": "Building a Full-Stack App with React and Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andstyles/silver-octo-fortnight.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andstyles/silver-octo-fortnight/issues"
+  },
+  "homepage": "https://github.com/andstyles/silver-octo-fortnight#readme",
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "browserify": "^14.4.0",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "gulp": "^3.9.1",
+    "gulp-live-server": "0.0.31",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-tools": "^0.13.3",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
