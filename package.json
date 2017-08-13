@@ -21,6 +21,8 @@
     "ejs": "^2.5.7",
     "express": "^4.15.4",
     "gulp": "^3.9.1",
-    "gulp-live-server": "0.0.31"
+    "gulp-live-server": "0.0.31",
+    "react": "^15.6.1",
+    "react-tools": "^0.13.3"
   }
 }
