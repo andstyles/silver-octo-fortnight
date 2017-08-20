@@ -5,6 +5,13 @@ module.exports = React.createClass({
         return (
             <div>
                 <h1>Grocery Listify</h1>
+                <div>
+                    {this.props.items.map(function (item, index) {
+                        return (
+                            <div key={item.name}>{item.name}</div>
+                        )
+                    })}
+                </div>
             </div>
         )
     }
