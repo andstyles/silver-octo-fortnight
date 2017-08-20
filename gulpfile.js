@@ -23,7 +23,10 @@ gulp.task('bundle', ['copy'], function () {
 
 gulp.task('copy', function () {
     gulp.src(['app/*.css'])
-    .pipe(gulp.dest('./.tmp'))
+    .pipe(gulp.dest('./.tmp'));
+
+    gulp.src(['bower_components/**'])
+    .pipe(gulp.dest('./.tmp/bower_components'));
 })
 
 gulp.task('serve', ['bundle', 'live-server'], function () {
