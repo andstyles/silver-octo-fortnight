@@ -21,7 +21,13 @@ function GroceryItemStore() {
         items.push(item);
         triggerListeners();
 
-        helper.post('api/items', item);
+        helper.post('api/items', item)
+        .then(function (res) {
+            console.log(res);
+        })
+        .catch(function (err) {
+            console.log(err);
+        });
     }
 
     function deleteGroceryItem(item) {

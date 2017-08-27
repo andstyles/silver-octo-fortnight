@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+var GroceryItem = require('./models/GroceryItem.js');
 
 mongoose.Promise = require('bluebird');
 
@@ -7,4 +8,21 @@ mongoose.connect('mongodb://localhost/grocery', {
 })
 .then(function () {
     console.log('connected.');
+
+    mongoose.connection.db.dropDatabase();
+
+    var items = [{
+        name: 'Ice Cream'
+    }, {
+        name: 'Waffles'
+    }, {
+        name: 'Candy',
+        purchased: true
+    }, {
+        name: 'Snarks'
+    }];
+
+    items.forEach(function (item) {
+        new GroceryItem(item).save();
+    });
 });
