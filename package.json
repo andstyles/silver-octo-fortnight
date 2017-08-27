@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/andstyles/silver-octo-fortnight#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "browser-sync": "^2.18.13",
     "browserify": "^14.4.0",
     "ejs": "^2.5.7",
@@ -24,6 +25,7 @@
     "guid": "0.0.12",
     "gulp": "^3.9.1",
     "gulp-live-server": "0.0.31",
+    "jquery": "^3.2.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-tools": "^0.13.3",
