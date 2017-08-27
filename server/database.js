@@ -23,6 +23,7 @@ mongoose.connect('mongodb://localhost/grocery', {
     }];
 
     items.forEach(function (item) {
+        console.log('Adding item...', item);
         new GroceryItem(item).save();
     });
 });

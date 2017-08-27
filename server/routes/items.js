@@ -19,14 +19,16 @@ module.exports = function (app) {
 
     app.route('/api/items/:id')
     .delete(function (req, res) {
-        GroceryItem.find({
+        console.log('Removing item...', req.params.id);
+        GroceryItem.findOneAndRemove({
             _id: req.params.id
-        }).remove();
+        });
     })
     .patch(function (req, res) {
         GroceryItem.findOne({
             _id: req.body._id
         }, function (error, doc) {
+            console.log(error);
             for (var key in req.body) {
                 doc[key] = req.body[key];
             }
