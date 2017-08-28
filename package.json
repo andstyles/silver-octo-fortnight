@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/andstyles/silver-octo-fortnight#readme",
   "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
     "bluebird": "^3.5.0",
     "body-parser": "^1.17.2",
     "browser-sync": "^2.18.13",
